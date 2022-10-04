@@ -8,7 +8,7 @@ Console.WriteLine("Введите натуральное число больше
 int num = int.Parse(Console.ReadLine());
 
 
-void NumberCounter (int num)
+void intervalNumbers (int num)
 {
     if (num < 0) 
     {
@@ -19,7 +19,7 @@ void NumberCounter (int num)
         return;
     }
     Console.Write("{0,4}", num);
-    NumberCounter (num - 1);
+    intervalNumbers (num - 1);
 }
 
-NumberCounter(num);
+intervalNumber(num);
